@@ -488,4 +488,67 @@ body{
     padding-left: 5%;
   }
 
+  .chart-TFIDF-container{
+    width: 100%;
+    padding-left: 0px;
+    }
+
+    .chart-TFIDF-melodrama-container,
+    .chart-TFIDF-pureHeroine-container{
+        width: 90%;
+        padding-left: 5%;
+        padding-top: 20px;
+    }
+
+  .NRC-All p.description,
+  .NRC-All p.explanation{
+    font-size: 15px;
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .chart-NRC-All-container{
+    width: 100%;
+    padding-left: 0px;
+    }
+
+    .chart-NRC-All-melodrama-container,
+    .chart-NRC-All-pureHeroine-container{
+        width: 90%;
+        padding-left: 5%;
+        padding-top: 20px;
+    }
+
+
+  .NRC-PosNeg p.description,
+  .NRC-PosNeg p.explanation{
+    font-size: 15px;
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .chart-NRC-PosNeg-melodrama-container,
+  .chart-NRC-PosNeg-pureHeroine-container{
+    width: 100%;
+    padding-left: 0px;
+    }
+
+    .chart-NRC-Pos-melodrama-container,
+    .chart-NRC-Pos-pureHeroine-container,
+    .chart-NRC-Neg-melodrama-container,
+    .chart-NRC-Neg-pureHeroine-container{
+        width: 90%;
+        padding-left: 5%;
+        padding-top: 20px;
+    }
+
+
+    .footer p.description{
+    font-size: 15px;
+    width: 90%;
+    padding-left: 5%;
+  }
+
+
+
 }
