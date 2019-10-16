@@ -420,11 +420,11 @@ body{
     height: 110%;
     opacity : 0.4;
     z-index: -1;
-    background-image: url('lorde.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: url(bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
   }
 
 
