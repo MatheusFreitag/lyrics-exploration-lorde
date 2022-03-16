@@ -113,7 +113,7 @@ function showWordCount(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Histograma da contagem de palavras em cada música",
+                text: "Histogram of the word count in each song",
                 fontColor: 'white'
             },
             legend: {
@@ -138,14 +138,14 @@ function showWordCount(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem de palavras',
+                        labelString: 'Word count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem de músicas',
+                        labelString: 'Song Count',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -171,7 +171,7 @@ function showMostPopularWords(){
         data: {
         labels: dataLabels_most_popular_words,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_most_popular_words,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -181,7 +181,7 @@ function showMostPopularWords(){
             aspectRatio: 1,
             title: {
                 display: true,
-                text: "Palavras mais populares",
+                text: "Most popular words",
                 fontColor: 'white'
             },
             legend: {
@@ -198,14 +198,14 @@ function showMostPopularWords(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Quantidade de ocorrências',
+                        labelString: '#Occurences',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra analisada',
+                        labelString: 'Words',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -240,7 +240,7 @@ function showMostPopularWords_Melodrama(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Palavras mais populares em Melodrama",
+                text: "Most used words in Melodrama",
                 fontColor: 'white'
             },
             legend: {
@@ -257,14 +257,14 @@ function showMostPopularWords_Melodrama(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Quantidade de ocorrências',
+                        labelString: '#Ocurrences',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra analisada',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -296,7 +296,7 @@ function showMostPopularWords_pureHeroine(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Palavras mais populares em Pure Heroine",
+                text: "Most used words in Pure Heroine",
                 fontColor: 'white'
             },
             legend: {
@@ -313,14 +313,14 @@ function showMostPopularWords_pureHeroine(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Quantidade de ocorrências',
+                        labelString: '#Ocurrences',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra analisada',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -345,7 +345,7 @@ function showTFIDF_Melodrama(){
         data: {
         labels: dataLabels_TFIDF_melodrama,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_TFIDF_melodrama,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -354,7 +354,7 @@ function showTFIDF_Melodrama(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Palavras mais importantes em Melodrama",
+                text: "Most important words in Melodrama",
                 fontColor: 'white'
             },
             legend: {
@@ -371,14 +371,14 @@ function showTFIDF_Melodrama(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Score TF-IDF',
+                        labelString: 'TF-IDF Score',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -409,7 +409,7 @@ function showTFIDF_pureHeroine(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Palavras mais importantes em Pure Heroine",
+                text: "Most important words in Pure Heroine",
                 fontColor: 'white'
             },
             legend: {
@@ -426,14 +426,14 @@ function showTFIDF_pureHeroine(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Score TF-IDF',
+                        labelString: 'TF-IDF Score',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -460,7 +460,7 @@ function showNRC_All_Melodrama(){
         data: {
         labels: dataLabels_NRC_All_melodrama,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_NRC_All_melodrama,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -469,7 +469,7 @@ function showNRC_All_Melodrama(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Sentimentos mais encontrados em Melodrama",
+                text: "Most prominent feelings in Melodrama",
                 fontColor: 'white'
             },
             legend: {
@@ -486,14 +486,14 @@ function showNRC_All_Melodrama(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem de termos',
+                        labelString: 'Word count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Sentimento',
+                        labelString: 'Feeling',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -515,7 +515,7 @@ function showNRC_All_pureHeroine(){
         data: {
         labels: dataLabels_NRC_All_pureHeroine,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_NRC_All_pureHeroine,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -524,7 +524,7 @@ function showNRC_All_pureHeroine(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Sentimentos mais encontrados em Pure Heroine",
+                text: "Most prominent feelings in Pure Heroine",
                 fontColor: 'white'
             },
             legend: {
@@ -541,14 +541,14 @@ function showNRC_All_pureHeroine(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem de termos',
+                        labelString: 'Word count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Sentimento',
+                        labelString: 'Feeling',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -573,7 +573,7 @@ function showNRC_Pos_Melodrama(){
         data: {
         labels: dataLabels_NRC_Pos_melodrama,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_NRC_Pos_melodrama,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -582,7 +582,7 @@ function showNRC_Pos_Melodrama(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Maiores contribuições para sentimentos POSITIVOS em Melodrama",
+                text: "Biggest Contributions to POSITIVE Feelings in Melodrama",
                 fontColor: 'white'
             },
             legend: {
@@ -599,14 +599,14 @@ function showNRC_Pos_Melodrama(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem',
+                        labelString: 'Count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -628,7 +628,7 @@ function showNRC_Neg_Melodrama(){
         data: {
         labels: dataLabels_NRC_Neg_melodrama,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_NRC_Neg_melodrama,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -637,7 +637,7 @@ function showNRC_Neg_Melodrama(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Maiores contribuições para sentimentos NEGATIVOS em Melodrama",
+                text: "Biggest Contributions to NEGATIVE Feelings in Melodrama",
                 fontColor: 'white'
             },
             legend: {
@@ -654,14 +654,14 @@ function showNRC_Neg_Melodrama(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem',
+                        labelString: 'Count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavras',
+                        labelString: 'Words',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -684,7 +684,7 @@ function showNRC_Pos_pureHeroine(){
         data: {
         labels: dataLabels_NRC_Pos_pureHeroine,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_NRC_Pos_pureHeroine,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -693,7 +693,7 @@ function showNRC_Pos_pureHeroine(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Maiores contribuições para sentimentos POSITIVOS em Pure Heroine",
+                text: "Biggest Contributions to POSITIVE Feelings in Pure Heroine",
                 fontColor: 'white'
             },
             legend: {
@@ -710,14 +710,14 @@ function showNRC_Pos_pureHeroine(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem',
+                        labelString: 'Count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavra',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {
@@ -739,7 +739,7 @@ function showNRC_Neg_pureHeroine(){
         data: {
         labels: dataLabels_NRC_Neg_pureHeroine,
         datasets: [{
-            label: 'Contagem',
+            label: 'Count',
             data: dataValues_NRC_Neg_pureHeroine,
             backgroundColor: 'rgba(255, 255, 255, 1)',
         }]
@@ -748,7 +748,7 @@ function showNRC_Neg_pureHeroine(){
           aspectRatio: 1,
             title: {
                 display: true,
-                text: "Maiores contribuições para sentimentos NEGATIVOS em Pure Heroine",
+                text: "Biggest Contributions to NEGATIVE Feelings in Pure Heroine",
                 fontColor: 'white'
             },
             legend: {
@@ -765,14 +765,14 @@ function showNRC_Neg_pureHeroine(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Contagem',
+                        labelString: 'Count',
                         fontColor: 'white'
                     },
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Palavras',
+                        labelString: 'Word',
                         fontColor: 'white'
                     },
                     ticks: {

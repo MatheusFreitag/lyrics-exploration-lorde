@@ -8,20 +8,16 @@
 
     <meta property="og:url" content="https://matheusfreitag.github.io/lyrics-exploration-lorde/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Análise Musical: Lorde" />
-    <meta property="og:description" content="Entendendo Lorde com Ciência de Dados" />
+    <meta property="og:title" content="Musical Analysis: Lorde" />
+    <meta property="og:description" content="Listening to Lorde with data Science" />
     <meta property="og:image" content="https://i.imgur.com/2iJjfWj.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@matheusfreitag" />
-    <meta name="twitter:title" content="Análise Musical: Lorde" />
-    <meta name="twitter:description" content="Entendendo Lorde com Ciência de Dados." />
+    <meta name="twitter:title" content="Musical Analysis: Lorde" />
+    <meta name="twitter:description" content="Listening to Lorde with data Science" />
     <meta name="twitter:image" content="https://i.imgur.com/2iJjfWj.png" />
-    <meta name="twitter:image:alt" content="O que a Ciência de Dados diz sobre as composições de Lorde" />
-
-
-
-
+    <meta name="twitter:image:alt" content="What Data Science techniques have to say about Lorde's lyrics?" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -32,24 +28,24 @@
 
     <section class='header'>
         <div class="header-background"></div>
-          <h1>Análise Musical: Lorde</h2>
+          <h1>Musical Analysis: Lorde</h2>
           <p class="description">
-              Ella Marija Lani Yelich-O'Connor, mais conhecida pelo seu nome artístico <i>"Lorde"</i>, é uma artista neozelandesa nascida em 1996.
-              Com dois álbuns de estúdio, "Pure Heroine" e "Melodrama", lançados em 2013 e 2017 respectivamente, se consolidou com uma das
-              maiores artistas da música pop internacional - mas sobre o que suas composições falam se analisadas computacionalmente?
-              Aqui, utilizaremos Processamento de Linguagem Natural, um conjunto de técnicas da Ciência de Dados para compreender textos, e analisaremos
-              a lexicografia, sentimentos e comportamentos das letras da artista.
+            Ella Marija Lani Yelich-O'Connor, better known by her stage name <i>"Lorde"</i>, is a New Zealand artist born in 1996.
+            With two studio albums, "Pure Heroine" and "Melodrama", released in 2013 and 2017 respectively, she has consolidated herself as one of the
+            greatest artists in international pop music - but what do her compositions talk about if analyzed computationally?
+            Here, we will use Natural Language Processing, a set of Data Science techniques to understand texts, and we will analyze
+            the lexicography, feelings and behaviors of the artist's lyrics.
           </p>
     </section>
 
 
     <section class="contagem-de-palavras">
-        <h2>Contagem de Palavras</h2>
+        <h2>Word Count</h2>
 
         <p class="description">
-            Entre os dois álbuns analisados, Lorde lançou pouco mais de 20 músicas ao todo. Mas quão longas elas são matematicamente?
-            Nesta parte, iremos ver quantas palavras compões cada música da artista, e ver quão extensas elas são. Nesta contagem não foram
-            contabilizadas palavras com menos de 3 caracteres, e nem <a target="_blank" href="https://pt.wikipedia.org/wiki/Palavra_vazia">stopwords</a>.
+            Between the two albums analyzed, Lorde released around 20 songs overall. How long are they "mathematically"?
+            In this part, we will see how many words make up each song, and see how long the lyrics are. In this count neither
+            words with less than 3 characters or <a target="_blank" href="https://pt.wikipedia.org/wiki/Palavra_vazia">stopwords</a> are counted.
         </p>
 
         <div class='chart-word-count-container'>
@@ -57,21 +53,20 @@
         </div>
 
         <p class="explanation">
-            É possível notar que a maior parte das canções possuem composições de 100 a 160 palavras, com poucas saindo deste intervalo.
-            A canção mais "repetitiva" é <i>Liability(Reprise)</i>, com um total de 34 palavras usadas, enquanto <i>Hard Feelings-Loveless</i> é a mais "diversa", com
-            201 palavras. Ambas as faixas são do álbum "Melodrama", e é discutível essa última ser a mais diversa pois na realidade ela é composta por duas
-            músicas independentes. Por serem apresentadas na mesma faixa do álbum, a mesma foi considerada como uma única faixa.
+            It is possible to notice that most of the songs have compositions with 100 up to 160 words, with only a few songs outside this range.
+            The most "repetitive" song is <i>Liability(Reprise)</i>, with a total of 34 words used, while <i>Hard Feelings-Loveless</i> is the most "diverse", with
+            201 distinct words. Both tracks are from the album "Melodrama", and it is arguable that the latter is the most diverse, as it is actually composed of two
+            independent songs. Because they are presented on the same track of the album, it was considered as a single track.
         </p>
 
     </section>
 
     <section class="palavras-mais-populares">
-            <h2>Palavras mais populares</h2>
+            <h2>Most Popular Words</h2>
 
             <p class="description">
-                Agora que entendemos a distribuição da quantidade de termos usados, temos a pergunta: Quais são as palavras mais usadas por Lorde em suas composições?
-                Para esta pergunta iremos primeiro ver um resumo geral dos dois álbuns analisados, e posteriormente veremos como esses termos se comportam entre os
-                termos mais usados em cada álbum individualmente.
+                Now that we understand the distribution of terms used, we have another question: What are the most used words in Lorde's compositions?
+                For this question, we will first see a general summary of the two albums analyzed, and later we will see how those terms behave between the two albums individually.
             </p>
 
             <div class='chart-most-popular-words-container'>
@@ -79,16 +74,16 @@
             </div>
 
             <p class="explanation">
-                Analisando ambos os álbuns, as palavras "like", "love" e "know" são as mais utilizadas nas músicas da cantora.
-                Mas aqui estamos analisando todas as canções juntas. Quais são as palavras mais usadas nas músicas de <i>Melodrama</i>? E de <i>Pure Heroine</i>?
+                Analyzing both albums, the words "like", "love" and "know" are the most used in the singer's songs.
+                But here we are analyzing all the songs together. What are the most used words in <i>Melodrama</i> songs? What about <i>Pure Heroine</i>?
             </p>
     </section>
 
     <section class="palavras-mais-populares-individual">
-            <h2>Palavras mais populares em cada álbum</h2>
+            <h2>Most popular words in each albums</h2>
 
             <p class="description">
-                Quão diferentes são os termos mais usados em cada álbum da Lorde?
+                How different are the most used terms on each Lorde album?
             </p>
 
             <div class="chart-most-popular-words-individual-container">
@@ -102,21 +97,21 @@
             </div>
 
             <p class="explanation">
-                É possível ver que "love" é um termo muito usado nos dois álbuns, mas "like", que é o termo mais usado no geral, nem figura nos mais
-                usados do Melodrama, fazendo o Pure Heroine ter um grande peso nessa métrica - não somente neste termo, mas em vários outros.
-                No Melodrama, "supercut" é um termo muito utilizado, e também é o nome de uma das faixas do álbum.
+                You can see that "love" is a term used a lot in both albums, but "like", which is the most used term in general, doesn't even appear in the most
+                used words in Melodrama, so Pure Heroine heavily influences this metric - not just in this term, but in many others.
+                In Melodrama, "supercut" is a term used a lot, and is also the name of one of the tracks of the album.
             </p>
     </section>
 
     <section class="TFIDF">
-            <h2>Importância com TF-IDF</h2>
+            <h2>Importance, with TF-IDF</h2>
 
             <p class="description">
-                Entendemos quais são os termos mais utilizados em cada álbum, mas isso não significa que os termos são <u>necessariamente</u> importantes.
-                Em Ciência de Dados, possuímos uma métrica chamada <a target="_blank" href="https://pt.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>, que
-                mede quão importante um termo específico é frente a todos os termos em um corpo de texto.
-                Basicamente, o TF-IDF é um score, e maior o score de um termo, mais significativo para a obra inteira ele é considerado. Quais são os termos
-                mais importantes, de acordo com essa métrica, em cada álbum?
+                We understand which terms are most commonly used on each album, but that doesn't mean the terms are <u>necessarily</u> important.
+                In Data Science, we have a metric called <a target="_blank" href="https://pt.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>, which
+                measures how important a specific term is against all terms in a body of text.
+                Basically, the TF-IDF is a score, and the higher the score of a term, the more significant it is for the entire work. What are the
+                most important terms according to TF-IDS metric in each album?
             </p>
 
             <div class="chart-TFIDF-container">
@@ -130,21 +125,21 @@
             </div>
 
             <p class="explanation">
-                Para os ouvintes de Lorde, é possível ver a presença de músicas individuais fazendo peso nos termos mais importantes dos álbuns. Em Meldorama,
-                palavras como "boom" e "supercut" seguem sendo muito importantes na descrição do álbum, enquanto no Pure Heroine vemos um grande valor em palavras como
-                "club", "people" and "love", que descrevem bem a temática do álbum.
+                For Lorde's listeners, it's possible to see the presence of individual songs weighing a lot in on the albums' most important terms. In Meldorama,
+                words like "boom" and "supercut" continue to be very important in the album "description", while in Pure Heroine we see great value in words like
+                "club", "people" and "love" <s>which I personally think describes well the theme of the album</s>.
             </p>
     </section>
 
 
     <section class="NRC-All">
-            <h2>Análise de Sentimentos com NRC</h2>
+            <h2>Sentiment Analysis with NRC</h2>
 
             <p class="description">
-                O NRC Emotion Lexicon <a targte="_blank" href="https://arxiv.org/pdf/1308.6297.pdf">(MOHAMMAD, S. e  Turney, P.; 2013)</a>, que aqui chamaremos 
-                somente de NRC, é um conjunto de termos em inglês que estão vinculados a 8 emoções distintas (Alegria, Tristeza, Medo, Raiva, Confiança, Antecipação,
-                Surpresa e Desgosto), e também a emoções gerais tidas como "positivas" ou "negativas". Usando ele como ferramenta, vamos entender melhor os 
-                sentimentos intrínsecos das músicas da Lorde para cada um de seus álbuns de estúdio.
+                The NRC Emotion Lexicon <a targte="_blank" href="https://arxiv.org/pdf/1308.6297.pdf">(MOHAMMAD, S. e  Turney, P.; 2013)</a>, which we will refer to
+                simply as "NRC", is a set of English terms that are linked to 8 distinct emotions (Joy, Sadness, Fear, Anger, Confidence, Anticipation,
+                Surprise and Disgust), and also to general emotions perceived as "positive" or "negative". Using it as a tool, we will better understand the
+                Lorde's intrinsic feelings for each of her studio albums.
             </p>
 
             <div class="chart-NRC-All-container">
@@ -158,21 +153,21 @@
             </div>
 
             <p class="explanation">
-                Como o próprio nome indica, "Melodrama" é um álbum mais dramático e melancólico, com "Medo" e "Tristeza" sendo os sentimentos mais identificados
-                nas composições, seguido por doses de "alegria" e "raiva". Pure Heroine é mais esperançoso e enérgico, mostrando altas doses de "confiança" e 
-                "antecipação" em suas melodias, seguido também por "alegria".
+                As its name implies, "Melodrama" is a more dramatic and melancholic album, with "Fear" and "Sadness" being the most identified feelings.
+                in the compositions, followed by doses of "joy" and "anger". Pure Heroine is more hopeful and energetic, showing high doses of "confidence" and
+                "anticipation" in their melodies, also followed by "joy".
             </p>
     </section>
 
 
 
     <section class="NRC-PosNeg">
-            <h2>Contribuições aos Sentimentos</h2>
+            <h2>Contributions to Feelings</h2>
 
             <p class="description">
-                Como explicitado antes, o NRC classifica diversas palavras como "positivas" ou "negativas" sentimentalmente. Fica evidente nos gráficos anteriores
-                que ambos os álbuns possuem flutuações emocionais, então quais termos contribuem mais para cada uma das emoções? é isto que iremos analisar nesta
-                parte do estudo.
+                As explained earlier, the NRC classifies many words as "positive" or "negative" sentimentally. It is evident in the previous charts
+                that both albums have emotional fluctuations, so which terms contribute the most to each of the emotions? This is what we will analyze in this
+                part of the study.
             </p>
 
             <h3>Melodrama</h3>
@@ -198,12 +193,12 @@
             </div>
 
             <p class="explanation">
-                Nos momentos ditos "positivos" do Melodrama, Lorde fala muito sobre amor, inspiração, conversas e perfeição, enquanto que os sentimentos negativos
-                do álbum se devem a perdas, partidas e brigas.
-                O Pure Heroine também fala de amor e conversas, mas também fala sobre amizade e gentileza nos seus momentos positivos. Para sentimentos negativos, eles
-                estão presentes em momentos de perdas, erros e quedas.
-                Neste segundo caso, é curioso perceber que "adolescência" e "adolescentes" são retratados como causadores de sentimentos positivos e negativos - 
-                o que faz sentido dada a fase da vida. 
+                In Melodrama's so-called "positive" moments, Lorde talks a lot about love, inspiration, conversations and perfection, while negative feelings
+                of the album are related to losses, departures and fights.
+                Pure Heroine also talks about love and conversations, but it also talks about friendship and kindness in its positive moments. For negative feelings, they
+                are present in situation losses and errors.
+                In this second case, it is curious to notice that "teen" and "teens" are portrayed as causing positive and negative feelings -
+                which makes sense given the stage of life.
             </p>
     </section>
 
@@ -211,10 +206,10 @@
     <section class="footer">
             <hr>
             <p class="description">
-                Feito com 💙 e ☕ por <a target="_blank" href="https://matheusfreitag.github.io">Matheus Freitag</a>.<br>
-                Para este projeto foi utilizado <a target="_blank" href="https://www.chartjs.org/">ChartJS</a>, 
-                e a análise foi feita com <a target="_blank" href="https://pandas.pydata.org/">Pandas</a>.<br>
-                Os dados, a interface e a análise completa podem ser encontradas <a target="_blank" href="https://github.com/MatheusFreitag/lyrics-exploration-lorde/">neste repositório.</a>
+                Made with 💙 and ☕ by <a target="_blank" href="https://matheusfreitag.github.io">Matheus Freitag</a>.<br>
+                For this project I used <a target="_blank" href="https://www.chartjs.org/">ChartJS</a>,
+                and the parsing was done with <a target="_blank" href="https://pandas.pydata.org/">Pandas</a>.<br>
+                The data, interface and full analysis can be found <a target="_blank" href="https://github.com/MatheusFreitag/lyrics-exploration-lorde/">in this repository.</a>
             </p>
 
             
